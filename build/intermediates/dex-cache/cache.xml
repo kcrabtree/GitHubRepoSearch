@@ -12,57 +12,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_1c61bd4cd1bb20f03f4197b829f1518fe536f5ad/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_0076743f60966d98cc2148eb4ad2d86095d40152/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_20cff632e0627df0092979c2c777c3140a5b98d5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e3596cd1826679407e303a00b3c0c07a5c3b3496">
+        sha1="3cdcf16abcc6ad41d7b48a33d05b0a3b74d2dae6">
         <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_35169e91bcbecaf7edb6cc9fad7dd13a75d9cf7c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_22c65f38933aaf4b34f039a16f820aff342a8a3a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_2d5919141a14c043e70fe16bd527cab44f1799d8/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,21 +48,66 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_063ff703c1e94d9b0d037aa6a5de007a2242495e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/keithcrabtree/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
         <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_b652ae60f1930be8c7400a4cfc5844e3689fe0f5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_1c61bd4cd1bb20f03f4197b829f1518fe536f5ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_0076743f60966d98cc2148eb4ad2d86095d40152/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_20cff632e0627df0092979c2c777c3140a5b98d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_22c65f38933aaf4b34f039a16f820aff342a8a3a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_2d5919141a14c043e70fe16bd527cab44f1799d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/keithcrabtree/Desktop/AndroidCourse/GitHubRepoSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_063ff703c1e94d9b0d037aa6a5de007a2242495e/classes.dex" />
     </item>
 
 </items>

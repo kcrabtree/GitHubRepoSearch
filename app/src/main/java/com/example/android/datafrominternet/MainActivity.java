@@ -16,6 +16,8 @@
 package com.example.android.datafrominternet;
 
 import android.content.Context;
+import android.net.NetworkRequest;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -26,6 +28,7 @@ import android.widget.Toast;
 
 import com.example.android.datafrominternet.utilities.NetworkUtils;
 
+import java.io.IOException;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         mSearchResultsTextView = (TextView) findViewById(R.id.tv_github_search_results_json);
     }
 
-    public void makeGithubSearchQuery() {
+    private void makeGithubSearchQuery() {
         // Retrieve the search query
         String searchQuery = mSearchBoxEditText.getText().toString();
 
@@ -53,8 +56,33 @@ public class MainActivity extends AppCompatActivity {
 
         // Update the UI with our search query
         mUrlDisplayTextView.setText("URL Hit: "+url.toString());
+
+        // Make the http request to fetch the search results
+        new GithubQueryTask().execute(url);
     }
 
+    public class GithubQueryTask extends AsyncTask<URL, Void, String> {
+        @Override
+        protected String doInBackground(URL... urls) {
+            URL searchUrl = urls[0];
+            String githubSearchResults = null;
+
+            try {
+                githubSearchResults = NetworkUtils.getResponseFromHttpUrl(searchUrl);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            return githubSearchResults;
+        }
+
+        @Override
+        protected void onPostExecute(String searchResults) {
+            if (searchResults != null && !searchResults.equals("")) {
+                mSearchResultsTextView.setText(searchResults);
+            }
+        }
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
