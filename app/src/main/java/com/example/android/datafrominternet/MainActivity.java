@@ -24,11 +24,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.android.datafrominternet.utilities.NetworkUtils;
+
+import java.net.URL;
+
 public class MainActivity extends AppCompatActivity {
 
-    EditText mSearchBoxEditText;
-    TextView mUrlDisplayTextView;
-    TextView mSearchResultsTextView;
+    private EditText mSearchBoxEditText;
+    private TextView mUrlDisplayTextView;
+    private TextView mSearchResultsTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,17 @@ public class MainActivity extends AppCompatActivity {
         mSearchBoxEditText = (EditText) findViewById(R.id.et_search_box);
         mUrlDisplayTextView = (TextView) findViewById(R.id.tv_url_display);
         mSearchResultsTextView = (TextView) findViewById(R.id.tv_github_search_results_json);
+    }
+
+    public void makeGithubSearchQuery() {
+        // Retrieve the search query
+        String searchQuery = mSearchBoxEditText.getText().toString();
+
+        // Build the URL
+        URL url = NetworkUtils.buildUrl(searchQuery);
+
+        // Update the UI with our search query
+        mUrlDisplayTextView.setText("URL Hit: "+url.toString());
     }
 
     @Override
@@ -50,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int selectedMenuItem = item.getItemId();
         if (selectedMenuItem == R.id.action_search) {
-            Context context = MainActivity.this;
-            Toast.makeText(context, "search was clicked!", Toast.LENGTH_LONG).show();
+            this.makeGithubSearchQuery();
         }
         return super.onOptionsItemSelected(item);
     }
