@@ -14,5 +14,6 @@
   limitations under the License.
   -->
 <resources>
-    <string name="app_name">Github Query</string>
+    <string name="app_name">Query GitHub Repositories</string>
+    <string name="search">Search</string>
 </resources>
