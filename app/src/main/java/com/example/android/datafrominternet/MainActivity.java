@@ -15,16 +15,15 @@
  */
 package com.example.android.datafrominternet;
 
-import android.content.Context;
-import android.net.NetworkRequest;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.android.datafrominternet.utilities.NetworkUtils;
 
@@ -36,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText mSearchBoxEditText;
     private TextView mUrlDisplayTextView;
     private TextView mSearchResultsTextView;
+    private TextView mErrorMessageTextView;
+    private ProgressBar mLoadingProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         mSearchBoxEditText = (EditText) findViewById(R.id.et_search_box);
         mUrlDisplayTextView = (TextView) findViewById(R.id.tv_url_display);
         mSearchResultsTextView = (TextView) findViewById(R.id.tv_github_search_results_json);
+        mErrorMessageTextView = (TextView) findViewById(R.id.tv_error_message_display);
+        mLoadingProgressBar = (ProgressBar) findViewById(R.id.pb_loading_indicator);
     }
 
     private void makeGithubSearchQuery() {
@@ -61,7 +64,25 @@ public class MainActivity extends AppCompatActivity {
         new GithubQueryTask().execute(url);
     }
 
+    // Helper methods used to show/hide the search results and error message text views
+    private void showSearchResults() {
+        mSearchResultsTextView.setVisibility(View.VISIBLE);
+        mErrorMessageTextView.setVisibility(View.INVISIBLE);
+    }
+
+    private void showErrorMessage() {
+        mErrorMessageTextView.setVisibility(View.VISIBLE);
+        mSearchResultsTextView.setVisibility(View.INVISIBLE);
+    }
+
     public class GithubQueryTask extends AsyncTask<URL, Void, String> {
+        @Override
+        protected void onPreExecute() {
+            // Before performing a search, clear any previous results and show the loader
+            mSearchResultsTextView.setText("");
+            mLoadingProgressBar.setVisibility(View.VISIBLE);
+        }
+
         @Override
         protected String doInBackground(URL... urls) {
             URL searchUrl = urls[0];
@@ -78,8 +99,16 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String searchResults) {
+            // Hide the loading progress bar
+            mLoadingProgressBar.setVisibility(View.INVISIBLE);
+
+            // If we have search results, set the text view and display.
+            // Otherwise, hide the search results text view and show the error message.
             if (searchResults != null && !searchResults.equals("")) {
                 mSearchResultsTextView.setText(searchResults);
+                showSearchResults();
+            } else {
+                showErrorMessage();
             }
         }
     }

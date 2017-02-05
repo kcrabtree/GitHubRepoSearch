@@ -16,4 +16,5 @@
 <resources>
     <string name="app_name">Query GitHub Repositories</string>
     <string name="search">Search</string>
+    <string name="error_text">Unable to retrieve results, please try again later.</string>
 </resources>
